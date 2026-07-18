@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Resmi Desa Muara Dun</title>
+    <style>
+        :root {
+            --primary: #1b4d3e;
+            --primary-light: #2c6b56;
+            --accent: #e67e22;
+            --bg: #f4f7f6;
+            --text: #333;
+            --white: #ffffff;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3') no-repeat center center/cover;
+            color: var(--white);
+            text-align: center;
+            padding: 120px 20px;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+        nav a:hover {
+            background-color: var(--primary-light);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: var(--white);
+            padding: 35px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: var(--primary-light);
+            margin: 15px 0 10px 0;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 5px solid var(--primary);
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+            margin-top: 25px;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 6px;
+        }
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--primary);
+            margin: 0;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 6px;
+            height: 180px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        footer {
+            background-color: #111;
+            color: var(--white);
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Desa Muara Dun</h1>
+        <p>Kecamatan Muara Ancalong, Kabupaten Kutai Timur, Kalimantan Timur</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#profil">Profil & Sejarah</a></li>
+            <li><a href="#visimisi">Visi Misi</a></li>
+            <li><a href="#kelembagaan">Kelembagaan</a></li>
+            <li><a href="#layanan">Pelayanan Desa</a></li>
+            <li><a href="#berita">Berita & Agenda</a></li>
+            <li><a href="#galeri">Galeri Kegiatan</a></li>
+            <li><a href="#kontak">Peta & Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <!-- PROFIL & SEJARAH DESA -->
+        <section id="profil">
+            <h2>Profil & Sejarah Desa</h2>
+            <p><strong>Desa Muara Dun</strong> adalah salah satu desa administratif yang terletak di wilayah Kecamatan Muara Ancalong, Kabupaten Kutai Timur, Provinsi Kalimantan Timur. Secara geografis, desa ini berada di kawasan pedalaman perkebunan serta aliran sungai khas pulau Kalimantan, menjadikannya memiliki potensi besar di bidang perikanan darat dan komoditas perkebunan lokal.</p>
+            
+            <h3>Sejarah Singkat Desa</h3>
+            <p>Perkembangan pemukiman Muara Dun terikat erat dengan jalur transportasi perairan sungai di Kutai Timur sebagai urat nadi perdagangan hasil bumi era dahulu. Setelah sekian lama berkembang, Muara Dun disahkan menjadi desa definitif di bawah naungan Kecamatan Muara Ancalong. Pemerintah desa bersama masyarakat terus melakukan pembenahan infrastruktur, salah satunya ditandai dengan selesainya pembangunan dan peresmian Kantor Desa Muara Dun yang baru demi optimalisasi pelayanan publik yang prima dan modern bagi seluruh warga.</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>635+</h3>
+                    <p>Jumlah Penduduk</p>
+                </div>
+                <div class="stat-item">
+                    <h3>815 km²</h3>
+                    <p>Luas Wilayah</p>
+                </div>
+                <div class="stat-item">
+                    <h3>75656</h3>
+                    <p>Kode Pos</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISI MISI -->
+        <section id="visimisi">
+            <h2>Visi & Misi Desa</h2>
+            <div class="grid">
+                <div>
+                    <h3>Visi</h3>
+                    <p><i>"Terwujudnya tata kelola pemerintahan Desa Muara Dun yang transparan, akuntabel, dan prima guna mendorong kemandirian ekonomi serta kesejahteraan masyarakat desa."</i></p>
+                </div>
+                <div>
+                    <h3>Misi</h3>
+                    <ul>
+                        <li>Meningkatkan kualitas SDM aparatur desa dalam melayani urusan administrasi secara cepat dan mudah.</li>
+                        <li>Memaksimalkan pemanfaatan fasilitas infrastruktur kantor desa baru untuk ruang musyawarah dan keterbukaan informasi publik.</li>
+                        <li>Mendorong kemandirian UMKM masyarakat melalui pengolahan potensi lokal, seperti hilirisasi produk pertanian dan industri perikanan darat.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- KELEMBAGAAN DESA -->
+        <section id="kelembagaan">
+            <h2>Kelembagaan Desa</h2>
+            <p style="margin-bottom: 25px;">Struktur penggerak pembangunan di lingkungan Pemerintahan Desa Muara Dun:</p>
+            <div class="grid">
+                <div class="card">
+                    <h4>Pemerintah Desa (Pemdes)</h4>
+                    <p>Dipimpin oleh Kepala Desa beserta jajaran Sekretaris Desa, Kepala Urusan (Kaur), dan Kepala Seksi (Kasi) sebagai pelaksana pelayanan publik operasional harian.</p>
+                </div>
+                <div class="card">
+                    <h4>Badan Permusyawaratan Desa (BPD)</h4>
+                    <p>Lembaga mitra kerja pemerintah desa yang berfungsi legislatif untuk menyerap aspirasi warga, merumuskan Peraturan Desa, dan mengawasi jalannya anggaran ADD/DD.</p>
+                </div>
+                <div class="card">
+                    <h4>Lembaga Pemberdayaan Kemasyarakatan</h4>
+                    <p>Meliputi TP-PKK untuk posyandu dan ketahanan pangan keluarga, serta Karang Taruna sebagai wadah kepemudaan dalam bidang olahraga, seni budaya, dan sosial kemasyarakatan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PELAYANAN DESA -->
+        <section id="layanan">
+            <h2>Pelayanan Administrasi Warga</h2>
+            <p style="margin-bottom: 20px;">Melalui peresmian kantor desa yang baru, jajaran perangkat desa berkomitmen melayani permohonan berkas administrasi kependudukan dan usaha warga secara mudah, transparan, dan gratis:</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>1. Surat Pengantar Kependudukan (KTP / KK)</h3>
+                    <p><strong>Kegunaan:</strong> Dokumen pengantar pembuatan KTP baru, perubahan data elemen Kartu Keluarga, pencetakan KIA, atau pindah datang antar wilayah.</p>
+                    <p style="font-size: 0.9rem; color: #555; margin-top: 10px;"><strong>Syarat:</strong> Pengantar RT setempat, fotokopi Akta Kelahiran, dan KK lama asli.</p>
+                </div>
+                <div class="card">
+                    <h3>2. Surat Keterangan Usaha (SKU)</h3>
+                    <p><strong>Kegunaan:</strong> Syarat legalitas kelompok pengolah ikan, kelompok tani, atau pengajuan bantuan permodalan UMKM mikro ke lembaga keuangan terpercaya.</p>
+                    <p style="font-size: 0.9rem; color: #555; margin-top: 10px;"><strong>Syarat:</strong> KTP pemilik usaha, fotokopi KK, surat keterangan dari Ketua RT, dan foto lokasi usaha.</p>
+                </div>
+                <div class="card">
+                    <h3>3. Surat Keterangan Tidak Mampu (SKTM)</h3>
+                    <p><strong>Kegunaan:</strong> Keperluan pengajuan keringanan biaya pendidikan anak, pendaftaran beasiswa daerah, atau akses program jaminan kesehatan sosial pemerintah.</p>
+                    <p style="font-size: 0.9rem; color: #555; margin-top: 10px;"><strong>Syarat:</strong> KTP, KK asli, Surat Pengantar RT/RW, dan Surat Pernyataan Pendapatan bermaterai.</p>
+                </div>
+                <div class="card">
+                    <h3>4. Surat Pengantar Izin Keramaian & Domisili</h3>
+                    <p><strong>Kegunaan:</strong> Legalitas pelaksanaan acara adat/hajatan kemasyarakatan, serta surat domisili tinggal berkala bagi pekerja luar daerah.</p>
+                    <p style="font-size: 0.9rem; color: #555; margin-top: 10px;"><strong>Syarat:</strong> Kartu identitas diri aktif, Surat Pengantar RT, dan proposal detail kegiatan (khusus izin keramaian).</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BERITA & AGENDA -->
+        <section id="berita">
+            <h2>Berita & Kegiatan Desa Terbaru</h2>
+            <div class="grid">
+                <div class="card">
+                    <span style="color: var(--accent); font-weight: bold;">Terbaru</span>
+                    <h3>Peresmian Gedung Kantor Baru Desa Muara Dun</h3>
+                    <p>Bupati Kutai Timur meresmikan gedung operasional Kantor Desa Muara Dun yang baru guna memberikan pelayanan publik yang lebih representatif, nyaman, dan cepat bagi seluruh warga.</p>
+                </div>
+                <div class="card">
+                    <span style="color: var(--accent); font-weight: bold;">Kegiatan</span>
+                    <h3>Pelatihan Pemberdayaan Olahan Ikan Salai</h3>
+                    <p>Pemerintah desa menyelenggarakan program pelatihan inovasi kemasan produk ikan salai (ikan asap) lokal untuk mendongkrak daya saing ekonomi sektor perikanan desa.</p>
+                </div>
+                <div class="card">
+                    <span style="color: var(--accent); font-weight: bold;">Agenda</span>
+                    <h3>Musrenbangdes Rencana Pembangunan Infrastruktur</h3>
+                    <p>Rapat berkala perangkat desa bersama tokoh adat dan BPD dalam menyusun skala prioritas jalan penghubung usaha perkebunan warga.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERI -->
+        <section id="galeri">
+            <h2>Galeri Kegiatan Desa</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1595841696660-181c7ffde1cb?ixlib=rb-4.0.3" alt="Perkebunan"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3" alt="Gotong Royong"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1464234470488-f86e9aa7aa6b?ixlib=rb-4.0.3" alt="Musyawarah"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3" alt="Pelayanan Warga"></div>
+            </div>
+        </section>
+
+        <!-- KONTAK & PETA GOOGLE MAPS -->
+        <section id="kontak">
+            <h2>Peta Lokasi & Kontak Resmi</h2>
+            <div class="grid">
+                <div>
+                    <h3>Kantor Kepala Desa Muara Dun</h3>
+                    <p style="margin-bottom: 15px;">Kecamatan Muara Ancalong, Kabupaten Kutai Timur, Provinsi Kalimantan Timur, Kode Pos 75656.</p>
+                    <p><strong>Jam Operasional Kantor:</strong><br>Senin - Jumat: 08.00 - 15.30 WITA</p>
+                    <br>
+                    <p><strong>Email Resmi:</strong> pemdes@muaradun.desa.id</p>
+                    <p><strong>Informasi Pelayanan:</strong> Hubungi Ruang Pelayanan Publik di Kantor Desa.</p>
+                </div>
+                <div>
+                    <div class="map-container">
+                        <!-- Iframe Google Maps Diperbarui Langsung ke Titik Koordinat Desa Muara Dun, Muara Ancalong -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.4312010156976!2d116.635995!3d0.4922112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32070183ee429a1f%3A0xf510ec8ec49ba7c9!2sMuara%20Dun%2C%20Kec.%20Muara%20Ancalong%2C%20Kabupaten%20Kutai%20Timur%2C%20Kalimantan%20Timur!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pemerintah Desa Muara Dun. Hak Cipta Dilindungi Pemerintah Kabupaten Kutai Timur.</p>
+    </footer>
+
+</body>
+</html>

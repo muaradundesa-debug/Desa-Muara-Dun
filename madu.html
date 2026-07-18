@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Resmi Desa Muara Dun</title>
+    <style>
+        :root {
+            --primary: #1b4d3e;
+            --primary-light: #2c6b56;
+            --accent: #e67e22;
+            --bg: #f4f7f6;
+            --text: #333;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: var(--primary);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+        nav a:hover {
+            background-color: var(--primary-light);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        section {
+            background: white;
+            padding: 35px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 5px solid var(--primary);
+            border-radius: 4px;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            flex-wrap: wrap;
+            margin-top: 25px;
+        }
+        .stat-item h3 {
+            font-size: 2rem;
+            color: var(--primary);
+        }
+        /* Style Galeri */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 6px;
+            height: 180px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        /* Google Maps */
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        footer {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Desa Muara Dun</h1>
+        <p>Membangun Komunitas Mandiri, Makmur, dan Berbudaya digital</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#profil">Profil & Sejarah</a></li>
+            <li><a href="#visimisi">Visi Misi</a></li>
+            <li><a href="#kelembagaan">Kelembagaan</a></li>
+            <li><a href="#layanan">Layanan Desa</a></li>
+            <li><a href="#berita">Berita</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak & Peta</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        
+        <!-- PROFIL & SEJARAH DESA -->
+        <section id="profil">
+            <h2>Profil & Sejarah Desa</h2>
+            <p style="margin-bottom: 15px;"><strong>Desa Muara Dun</strong> merupakan desa yang terletak di kawasan strategis pertemuan jalur aliran sungai utama dengan wilayah perbukitan yang subur. Mayoritas penduduk kami berprofesi sebagai petani, pekebun, dan pengrajin lokal yang menjunjung tinggi nilai gotong royong.</p>
+            <h3>Sejarah Singkat</h3>
+            <p>Awal mulanya, Muara Dun dibentuk dari permukiman warga pinggiran sungai yang menjadi pusat perdagangan komoditas pertanian antar wilayah. Berkat persatuan komoditas lokal dan ekspansi wilayah yang tertib, wilayah ini berkembang pesat menjadi desa administratif mandiri yang fokus pada kelestarian lingkungan dan swasembada pangan.</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <h3>2,450</h3>
+                    <p>Total Penduduk</p>
+                </div>
+                <div class="stat-item">
+                    <h3>720</h3>
+                    <p>Kepala Keluarga</p>
+                </div>
+                <div class="stat-item">
+                    <h3>4</h3>
+                    <p>Dusun Utama</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VISI MISI -->
+        <section id="visimisi">
+            <h2>Visi & Misi</h2>
+            <div class="grid">
+                <div>
+                    <h3>Visi</h3>
+                    <p><i>"Terwujudnya Desa Muara Dun yang maju, transparan, sejahtera, dan berbasis pada kearifan lokal serta pemanfaatan teknologi berkelanjutan."</i></p>
+                </div>
+                <div>
+                    <h3>Misi</h3>
+                    <ul>
+                        <li>Meningkatkan pelayanan publik yang cepat, bersih, dan transparan.</li>
+                        <li>Mengoptimalkan sektor pertanian dan UMKM sebagai motor ekonomi warga.</li>
+                        <li>Pembangunan infrastruktur jalan dan fasilitas umum secara merata.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- KELEMBAGAAN DESA -->
+        <section id="kelembagaan">
+            <h2>Kelembagaan Desa</h2>
+            <p style="margin-bottom: 15px;">Struktur organisasi pembimbing dan penggerak kemajuan di lingkungan Desa Muara Dun:</p>
+            <div class="grid">
+                <div class="card">
+                    <h4>Pemerintah Desa</h4>
+                    <p>Dipimpin oleh Kepala Desa beserta Perangkat Desa (Sekretaris, Kaur, Kasi) sebagai pelaksana teknis administrasi dan pelayanan publik resmi.</p>
+                </div>
+                <div class="card">
+                    <h4>Badan Permusyawaratan Desa (BPD)</h4>
+                    <p>Lembaga perwakilan masyarakat desa yang berfungsi membahas rancangan peraturan desa, menampung, dan menyalurkan aspirasi warga.</p>
+                </div>
+                <div class="card">
+                    <h4>Lembaga Kemasyarakatan (PKK & Karang Taruna)</h4>
+                    <p>Wadah pemberdayaan perempuan serta pembinaan pemuda untuk aktivitas sosial, olahraga, seni, dan kreativitas ekonomi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LAYANAN DESA -->
+        <section id="layanan">
+            <h2>Layanan Administrasi Online</h2>
+            <p style="margin-bottom: 20px;">Persyaratan administrasi umum guna mempercepat proses pelayanan warga:</p>
+            <div class="grid">
+                <div class="card">
+                    <h3>Pengurusan KTP / KK</h3>
+                    <p>Syarat: Surat pengantar RT/RW, fotokopi KK lama, dan pas foto terbaru.</p>
+                </div>
+                <div class="card">
+                    <h3>Surat Keterangan Usaha (SKU)</h3>
+                    <p>Syarat: KTP pemilik usaha, pengantar RT/RW, dan foto lokasi unit usaha.</p>
+                </div>
+                <div class="card">
+                    <h3>Surat Keterangan Tidak Mampu (SKTM)</h3>
+                    <p>Syarat: KTP, KK, Pengantar RT/RW, dan bukti pendapatan resmi.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- BERITA -->
+        <section id="berita">
+            <h2>Berita & Pengumuman Terbaru</h2>
+            <div class="grid">
+                <div class="card">
+                    <span style="color: var(--accent); font-weight: bold;">15 Juli 2026</span>
+                    <h3>Penyaluran BLT Dana Desa Tahap II</h3>
+                    <p>Pemerintah Desa Muara Dun telah menyalurkan bantuan tunai langsung secara tertib bagi keluarga penerima manfaat di Balai Desa.</p>
+                </div>
+                <div class="card">
+                    <span style="color: var(--accent); font-weight: bold;">10 Juli 2026</span>
+                    <h3>Kerja Bakti Massal Sambut HUT RI</h3>
+                    <p>Seluruh warga dari Dusun 1 hingga Dusun 4 serentak melakukan pembersihan saluran irigasi bersama guna mengantisipasi musim hujan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERI -->
+        <section id="galeri">
+            <h2>Galeri Kegiatan Desa</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1595841696660-181c7ffde1cb?ixlib=rb-4.0.3" alt="Kegiatan Tani Desa">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3" alt="Gotong Royong">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1464234470488-f86e9aa7aa6b?ixlib=rb-4.0.3" alt="Pertemuan Desa">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?ixlib=rb-4.0.3" alt="Anak-anak Desa">
+                </div>
+            </div>
+        </section>
+
+        <!-- KONTAK & PETA GOOGLE MAPS -->
+        <section id="kontak">
+            <h2>Lokasi & Kontak Resmi</h2>
+            <div class="grid">
+                <div>
+                    <h3>Kantor Kepala Desa Muara Dun</h3>
+                    <p style="margin-bottom: 15px;">Jl. Raya Utama Muara Dun No. 01, Kecamatan Makmur Jaya, Kabupaten Nusantara.</p>
+                    <p><strong>Jam Operasional:</strong><br>Senin - Jumat: 08.00 - 15.30 WIB</p>
+                    <br>
+                    <p><strong>Email:</strong> info@muaradun.desa.id</p>
+                    <p><strong>Telepon:</strong> (021) 555-DESA</p>
+                </div>
+                <div>
+                    <div class="map-container">
+                        <!-- Embed Google Maps -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127672.4727183061!2d100.3542385!3d-0.9470765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwNTYnNDkuNSJTIDEwMMKwMjEnMTUuMyJF!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Pemerintah Desa Muara Dun. Seluruh Hak Cipta Dilindungi.</p>
+    </footer>
+
+</body>
+</html>
